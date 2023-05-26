@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/card_dashboard_iv_bg"
+        android:layout_width="244dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="@dimen/dua_delapan"
+        android:layout_marginTop="@dimen/lima_enam"
+        android:layout_marginEnd="@dimen/dua_delapan"
+        android:background="@drawable/card_background"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/card_dashboard_tv_title"
+        style="@style/TextContentTitle"
+        android:layout_marginStart="@dimen/dua_delapan"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="@dimen/dua_delapan"
+        android:text="Selamat Datang"
+        app:layout_constraintBottom_toBottomOf="@+id/card_dashboard_iv_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <ImageView
+        android:id="@+id/card_datauser_iv_bg"
+        style="@style/BaseCard"
+        android:layout_width="350dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/user"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_dashboard_iv_bg" />
+
+    <TextView
+        android:id="@+id/card_user_tv_title"
+        style="@style/TextContentTitle"
+        android:text="Data User"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_datauser_iv_bg"
+        app:layout_constraintEnd_toEndOf="@+id/card_datauser_iv_bg"
+        app:layout_constraintStart_toStartOf="@+id/card_datauser_iv_bg"
+        app:layout_constraintTop_toTopOf="@+id/card_datauser_iv_bg" />
+
+    <ImageView
+        android:id="@+id/card_menu_iv_bg"
+        style="@style/BaseCard"
+        android:layout_width="350dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mangsung"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_datauser_iv_bg" />
+
+    <TextView
+        android:id="@+id/card_menu_tv_title"
+        style="@style/TextContentTitle"
+        android:text="Menu"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/card_menu_iv_bg"
+        app:layout_constraintEnd_toEndOf="@+id/card_menu_iv_bg"
+        app:layout_constraintStart_toStartOf="@+id/card_menu_iv_bg"
+        app:layout_constraintTop_toTopOf="@+id/card_menu_iv_bg" />
+
+    <ImageView
+        android:id="@+id/card_meja_iv_bg"
+        style="@style/BaseCard"
+        android:layout_width="350dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/meja"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_menu_iv_bg" />
+
+
+    <TextView
+        android:id="@+id/card_meja_tv_title"
+        style="@style/TextContentTitle"
+        android:text="Meja"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_meja_iv_bg"
+        app:layout_constraintEnd_toEndOf="@+id/card_meja_iv_bg"
+        app:layout_constraintStart_toStartOf="@+id/card_meja_iv_bg"
+        app:layout_constraintTop_toTopOf="@+id/card_meja_iv_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
